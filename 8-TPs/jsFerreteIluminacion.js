@@ -32,6 +32,14 @@ function CalcularPrecio ()
     else if (cantidad == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
     descuento = 0.25;
     }
-    else (cantidad == 4) 
+    else if (cantidad == 4) {
+        descuento = 0.2;
+    }
+    else if (cantidad == 3 && marca == "Argentina Luz") {
+        descuento = 0.15;
+    }else if (cantidad == 3 && marca == "FelipeLamparas") {
+        descuento = 0.10;
+    }
+    else if (cantidad == 3)
     
 }
