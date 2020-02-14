@@ -21,6 +21,16 @@ function comenzar()
 
 function verificar()
 {
+  var numeroSecreto;
+  var min;
+  var max;
+
+  min = 1;
+  max = 100;
+
+  numeroSecreto = Math.floor(Math.random() * (max - min)) + min;
+
+  
 	
 	
 }

@@ -10,14 +10,13 @@ min = 1;
 max = 10;
 
 NumeroRandom = Math.floor(Math.random() * (max - min)) + min;
-alert(NumeroRandom);
 
-if (NumeroRandom >= 9){
-alert ("EXCELENTE!") }
-	else if (NumeroRandom <9 && NumeroRandom >4){
-	alert ("APOBO")}
-	else (NumeroRandom < 4) {
-		alert ("Vamos, la proxima se puede")
+if (NumeroRandom >= 9) {
+alert (NumeroRandom +" - EXCELENTE!") }
+	else if (NumeroRandom <9 && NumeroRandom >4) {
+	alert (NumeroRandom +" - APOBÓ")}
+	else if (NumeroRandom < 4) {
+		alert (NumeroRandom +" - Vamos, la proxima se puede")
 	}
 	
 
