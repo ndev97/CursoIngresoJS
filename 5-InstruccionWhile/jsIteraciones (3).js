@@ -10,11 +10,11 @@ while (clave != "utn750") {
         break;
     }
     
-    clave = prompt ("Error, reingrese su clave")
+    clave = prompt ("Error, reingrese su clave");
 
     clave = clave.toLowerCase();
 }
 
-
+alert ("Bienvenido")
 }//FIN DE LA FUNCIÓN
 // != (es distinto a: )
