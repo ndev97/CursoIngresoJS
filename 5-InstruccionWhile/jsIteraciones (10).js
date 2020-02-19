@@ -58,9 +58,9 @@ function mostrar()
 
 	diferenciaPositivosYNegativos = sumaPositivos - sumaNegativos;
 
-	document.write("Promedio de negativos " + promedioNegativos) "<br>"
-	document.write("Promedio de positivos " + promedioPositivos) "<br>"
-	document.write("Diferencia " + diferenciaPositivosYNegativos) "<br>"
+	document.write("Promedio de negativos " + promedioNegativos); "<br>"
+	document.write("Promedio de positivos " + promedioPositivos); "<br>"
+	document.write("Diferencia " + diferenciaPositivosYNegativos); "<br>"
  
 
 
