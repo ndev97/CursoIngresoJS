@@ -1,9 +1,9 @@
 function mostrar()
 {
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
+	var contador = 0;
+	var positivo = 0;
+	var negativo = 1;
 	var respuesta = true;
 
 	while (respuesta) {
@@ -29,7 +29,7 @@ function mostrar()
 
 
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+document.getElementById('suma').value = positivo;
+document.getElementById('producto').value = negativo;
 
 }//comleto.

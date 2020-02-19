@@ -2,7 +2,7 @@ function mostrar()
 {
 
 	var contador=0;
-	// declarar variables
+	// declarar variables debajo:
 	var min;
 	var max;
 	var primeraVez = true;
@@ -25,7 +25,13 @@ function mostrar()
 			max = numero;
 			min = numero;
 		} else {
-			
+			if (numero > max) {
+				max = numero;
+			}
+
+			if (numero < min) {
+				min = numero;
+			}
 		}
 
 
@@ -38,4 +44,4 @@ function mostrar()
 
 
 
-}//FIN DE LA FUNCIÓN
+}//completo.
