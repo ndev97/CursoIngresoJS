@@ -2,21 +2,22 @@ function mostrar()
 {
 
 	var contador=0;
-	var acumulador=10;
+	var acumulador=0;
 
-	while (contador > 5) {
-		contador++;
+	while (contador < 5) {
 		var numero = prompt ("Ingrese numero");
 
-		numero = parseInt(numero)
+		numero = parseInt(numero);
 
-		if (isNan(numero)) {
-			alert ("Error");
-			continue;
-		}
-		
-		acumulador += numero 
-	} 
+	while (isNaN(numero)) {
+		numero = prompt("Error, ingrese un numero valido.");
+
+		numero = parseInt(numero);
+	}
+	contador++;
+
+	acumulador +- numero;
+	
 
 
 
