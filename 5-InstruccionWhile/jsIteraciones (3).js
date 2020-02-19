@@ -1,7 +1,7 @@
 function mostrar()
 {
 
-var clave = prompt("ingrese el número clave.");
+var clave = prompt("Ingrese la clave.");
 var contador = 0;
 
 while (clave != "utn750") {
@@ -15,6 +15,6 @@ while (clave != "utn750") {
     clave = clave.toLowerCase();
 }
 
-alert ("Bienvenido")
+
 }//FIN DE LA FUNCIÓN
 // != (es distinto a: )
