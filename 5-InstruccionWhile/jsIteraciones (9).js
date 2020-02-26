@@ -3,6 +3,7 @@ function mostrar()
 
 	var contador=0;
 	// declarar variables debajo:
+	var numero;
 	var min;
 	var max;
 	var primeraVez = true;

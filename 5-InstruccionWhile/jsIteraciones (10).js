@@ -32,6 +32,8 @@ function mostrar()
 		numero = parseInt(numero);
 	} while (isNaN(numero));
 
+	
+	
 	if (numero > 0) {
 		// punto 2
 		sumaPositivos += numero;
