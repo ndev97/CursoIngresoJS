@@ -2,14 +2,14 @@ function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 
-var NumeroRandom;
+var numeroRandom;
 var min;
 var max;
 
 min = 1;
 max = 11;
 
-NumeroRandom = Math.floor(Math.random() * (max - min)) + min;
-alert(NumeroRandom);
+numeroRandom = Math.floor(Math.random() * (max - min)) + min;
+alert("Numero entre " + numeroRandom);
 
 }//FIN DE LA FUNCIÓN

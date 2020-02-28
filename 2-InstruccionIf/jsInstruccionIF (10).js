@@ -1,23 +1,21 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	
-var NumeroRandom;
-var min;
-var max;
+	var max;
+	var min;
+	var nota;
 
-min = 1;
-max = 10;
+	max = 11
+	min = 1
 
-NumeroRandom = Math.floor(Math.random() * (max - min)) + min;
+	nota = Math.floor(Math.random() * (max - min))+ min;
 
-if (NumeroRandom >= 9) {
-alert (NumeroRandom +" - EXCELENTE!") }
-	else if (NumeroRandom <9 && NumeroRandom >4) {
-	alert (NumeroRandom +" - APOBÓ")}
-	else if (NumeroRandom < 4) {
-		alert (NumeroRandom +" - Vamos, la proxima se puede")
+	if(nota == 10 || nota == 9) {
+		alert(nota + "-Excelente")
+		} else if(nota >4){
+		alert(nota + "-Aprobo");
+		} else {
+			alert(nota + "-Vamos, la proxima se puede ");
 	}
-	
 
 }//FIN DE LA FUNCIÓN
