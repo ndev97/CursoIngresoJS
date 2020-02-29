@@ -23,5 +23,6 @@ function mostrar()
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=contador/5;
+}
 
-}//FIN DE LA FUNCIÓN
+}
