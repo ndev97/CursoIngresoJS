@@ -10,31 +10,30 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 
 var numeroSecreto; 
 var contadorIntentos;
-var min;
 var max;
+var min;
 var numeroIngresado;
-var contadorIntentos;
-contadorIntentos = 0;
+contadorIntentos = 0; 
+min = 1;
+max = 101;
 
 function comenzar()
 {
-  min = 1;
-  max = 101;
-  numeroSecreto = Math.floor(Math.random() * (max - min)) + min;
-  numeroIngresado = document.getElementById("numero").value;
-  console.log(numeroSecreto)
+  numeroSecreto = Math.floor(Math.random() * (max - min))+ min;
+  console.log(numeroSecreto);
 }
 
-function verificar() {
-  
-  var numeroUsuario;
+function verificar()
+{
+  numeroIngresado = document.getElementById("numero").value;
   contadorIntentos = contadorIntentos + 1;
-  document.getElementById("intentos").value = contadorIntentos
-
+  document.getElementById("intentos").value = contadorIntentos;
   
   if (numeroSecreto == numeroIngresado) {
-    alert ("Usted es un ganador en " + contadorIntentos + "intentos.");
-  } else if (numeroIngresado > numeroSecreto) {
-      alert ("Se pasó");
+    alert("Usted es un ganador en solo "+ contadorIntentos + " intentos.");
+  } else if (numeroIngresado < numeroSecreto) {
+    alert("Falta...");
+  }	else {
+    alert("Se paso...");
   }
 }
