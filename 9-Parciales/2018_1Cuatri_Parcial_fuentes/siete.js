@@ -12,6 +12,6 @@ function mostrar()
 
         do {
             var sexo = prompt("Ingrese F o M");
-        } while (sexo )
+        } while (sexo != "f" && sexo != "m")
     }
 }
