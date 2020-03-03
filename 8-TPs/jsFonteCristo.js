@@ -9,57 +9,54 @@ c.	Se pedirán un número positivo y se mostrará la cantidad de números divisi
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
+var numero;
+
 function ComenzarIngreso () 
 {
-    var numero;
-    var contador = 0;
-    var contadorPares;
-    var contadorImpares;
-    var respuesta = true;
+   numero = document.getElementById("numero").value;
+   numero = parseInt(numero);
 
-    while (respuesta) {
-        numero = prompt ("Ingresar numero");
-        numero = parseInt(numero);
-    }
-
+   while(isNaN(numero) || numero < 1) {
+       numero = prompt("Ingrese un numero valido");
+       numero = parseInt(numero);
+   }
 }
 
 function NumerosPares ()
 {
-    var numero;
-    numero = prompt("ingrese numero").value;
-    numero = parseInt(numero);
+    ComenzarIngreso();
+    var contador = 0;
+    var contadorPares = 0;
 
-    while(isNaN(numero) || numero < 0) {
-        numero = prompt ("ingrese un numero");
-        numero = parseInt(numero);
-    }
-
-    while (contador < numero) {
+    while(contador < numero) {
         contador++;
-
+        console.log(contador);
         if (contador % 2 == 0) {
-            console.log(numero);
+            contadorPares++;
         }
     }
 }
 function NumerosImpares()
 {
-    var numero;
-    numero = prompt ("Ingrese un numero").value;
-    numero = parseInt(numero);
+    ComenzarIngreso();
+    var contador = 0;
+    var contadorImpares = 0;
 
-    while (isNaN(numero)){
+    while(contador ) {
 
     }
 }
 function NumerosDivisibles()
 {
-    var contador = 1;
-    ComenzarInreso();
-    var numero;
+   ComenzarIngreso();
+   var contador = 1;
+   var cantidadDivisibles = 0;
 
-    while(contador <= 100) {
-    }
-
+   while (contador <= 100) {
+       
+       if(numero % contador == 0) {
+       cantidadDivisibles++;
+       contador++;
+       }
+   }
 }
