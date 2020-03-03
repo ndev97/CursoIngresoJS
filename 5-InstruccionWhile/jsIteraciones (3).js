@@ -8,7 +8,7 @@ function mostrar()
     alert("Bienvenido");
 }*/
 
-{
+/*{
     var clave = prompt("Ingrese la clave");
     var contador = 0;
 
@@ -22,4 +22,26 @@ function mostrar()
     }
 
     alert("BIENVENIDO");
+}*/
+
+{
+    var contador = 3;
+    var clave = prompt("Ingrese la clave");
+
+    while (clave != "utn750") {
+        contador--;
+        clave = prompt("3 intentos mas");
+        while (clave != "utn750") {
+            contador--;
+            clave = prompt("2 intentos mas");
+            while (clave != "utn750") {
+                contador--;
+                clave = prompt("1 intento mas");
+                while (contador == 0) {
+                    alert("Demasiados intentos");
+                }
+            }
+        }
+    }
+    alert("Bienvenido");
 }
