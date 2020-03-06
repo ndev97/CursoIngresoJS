@@ -1,36 +1,50 @@
 function mostrar()
 {
-    var nota;
-    var promedio;
-    var notaMinima;
-    var cantidadVarones;
-    var sexo;
-    var contador = 0;
-    var acumuladorNotas = 0;
-    var sumaNotas;
-    
-    
-    while (contador < 5) {
-        nota = prompt("Ingrese una nota");
-        nota = parseInt(nota);
+var contador=0;
+var promedioNotasTotales;
+var acumuladorNotas=0;
+var sexoMinimo;
+var contadorVarones=0;
+var notaMasBaja;
+var primeraVez = true;
 
-        while(isNaN(nota) && (nota < 1 || nota > 10)) {
-            nota = prompt("Ingrese una nota valida");
-            nota = parseInt(nota);
-        }
-        sexo = prompt("Ingrese un sexo");
-        while(sexo != "f" && sexo != "m") {
-            sexo = prompt("Ingrese F o M");
-        }
-        contador++;
-        acumuladorNotas++;
+
+while (contador < 5) {
+    var notas = prompt("Ingrese una nota");
+    notas = parseInt(notas);
+    while (isNaN(notas) || (notas <1 || notas >10) ) {
+        notas = prompt("Error: Ingrese una nota valida");
+        notas = parseInt(notas);
     }
-    //punto A:
-    /*if(acumuladorNotas == 5) {
-        alert("El acumulador de notas es " + acumuladorNotas);
-    }*/
-    sumaNotas += nota;
-    sumaNotas = parseInt(sumaNotas);
-    alert("La suma de notas es " + sumaNotas);
+    var sexo = prompt("Ingrese un sexo");
+    while (sexo != "f" && sexo != "m"){
+        sexo = prompt("Error: Ingrese un sexo valido");
+    } 
+    if (sexo == "m") {
+        contadorVarones++;
+    }
+    contador++;
+    acumuladorNotas+=notas;
+}
+
+if (primeraVez) {
+    primeraVez = false;
+    notaMasBaja = notas;
+    sexoMinimo = sexo;
+
+} 
+  else if (notas < notaMasBaja) {
+    notaMasBaja = notas;
+    sexoMinimo = sexo;
+
+} else if (sexo == "m" && notas>=6) {
+    contadorVarones++;
+}
+
+promedioNotasTotales = notas / acumuladorNotas;
+promedioNotasTotales = parseInt(promedioNotasTotales);
+alert("El promedio de notas es " + promedioNotasTotales);
+alert("La nota mas baja es " + notaMasBaja + " y su sexo es " + sexoMinimo);
+alert("La cantidad de varones son " + contadorVarones);
 
 }
